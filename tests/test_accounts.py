@@ -1,7 +1,7 @@
 """
 Tests for accounts classes.
 """
-from budgetcli.budget import Accounts, AccountType
+from src.budgetcli.budget import Accounts, AccountType
 
 
 def test_account_name():
