@@ -1,2 +1,3 @@
-# budget-cli
-A personal budgeting app written in Python
+# Personal Budgeting App - Terminal based
+
+A personal budgeting app written in Python.
