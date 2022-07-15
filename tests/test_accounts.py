@@ -1,7 +1,7 @@
 """
 Tests for accounts classes.
 """
-from src.budget import Accounts, AccountType
+from budgetcli.budget import Accounts, AccountType
 
 
 def test_account_name():
@@ -17,6 +17,7 @@ def test_account_type():
     """
     account = Accounts("cash")
     assert account.acc_type == AccountType.CHECKING
+
 
 def test_account_ammount():
     """Test the account ammount
