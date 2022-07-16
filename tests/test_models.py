@@ -58,7 +58,7 @@ class TestCategoriesModel:
     def test_category_representation(self):
         """Test the string repr"""
         category = Category(name="Shoping")
-        assert repr(category) == "Category"
+        assert repr(category) == "Category(name=Shoping)"
 
 
 class TestTransactionsModel:

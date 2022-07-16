@@ -55,10 +55,9 @@ class Category(NamedTuple):
     """
 
     name: str
-    activity: Activity = Activity
 
     def __repr__(self) -> str:
-        return f"{self.__class__.__name__}"
+        return f"{self.__class__.__name__}(name={self.name})"
 
 
 @dataclass
