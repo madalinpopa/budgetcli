@@ -39,6 +39,11 @@ class TestAccountsModel:
         account = Account("cash")
         assert account.acc_ammount == 0
 
+    def test_account_representation(self):
+        """Test the account repr"""
+        account = Account("Cash")
+        assert repr(account) == "Account(acc_name=Cash)"
+
 
 class TestCategoriesModel:
     """Contains all the tests for the category model"""

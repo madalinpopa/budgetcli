@@ -22,6 +22,7 @@ class AccountType(Enum):
     CASH: int = 2
 
 
+@dataclass
 class Account:
     """Represents a budget account
 
@@ -31,11 +32,12 @@ class Account:
     Each account has a type. Cash, Checking, Credit card.
     """
 
+    acc_name: str
+    acc_ammount: Decimal = Decimal(0)
     acc_type: AccountType = AccountType.CHECKING
 
-    def __init__(self, acc_name: str, acc_ammount: Decimal = Decimal(0)) -> None:
-        self.acc_name = acc_name
-        self.acc_ammount = acc_ammount
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}(acc_name={self.acc_name})"
 
 
 class Activity(NamedTuple):
