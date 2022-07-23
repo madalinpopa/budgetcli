@@ -112,6 +112,7 @@ venv.bak/
 
 # Sublime
 *sublime-project
+*sublime-workspace
 
 # Spyder project settings
 .spyderproject
