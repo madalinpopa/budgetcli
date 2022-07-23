@@ -110,6 +110,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# Sublime
+*sublime-project
+
 # Spyder project settings
 .spyderproject
 .spyproject

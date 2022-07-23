@@ -1,7 +1,6 @@
 """
 Tests for accounts classes.
 """
-import datetime
 import pytest
 
 from budgetcli.models import Account, AccountType, Category, Transaction
